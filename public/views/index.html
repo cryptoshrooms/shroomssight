@@ -6,7 +6,7 @@
   <div class="container">
   <div class="page-header">
     <h1>
-      Shroomssight - SHROOMS blockchain explorer.
+      SHROOMS blockchain explorer.
     </h1>
   </div>
   <div id="home" class="row">
@@ -89,6 +89,26 @@
         <div class="btn-more">
           <a href="/blocks" class="btn btn-default">See all blocks</a>
         </div>
+		
+          <h2>Latest Transactions</h2>
+ 
+         <table class="table table-hover table-striped" style="table-layout: fixed;">
+           <thead>
+             <tr>
+               <th>Hash</th>
+               <th class="text-right">Value Out</th>
+             </tr>
+           </thead>
+           <tbody>
+           <tr data-ng-show="!txs.length"><td colspan="3">Waiting for transactions...</td></tr>
+           <tr class="fader" data-ng-repeat='tx in txs'>
+             <td>
+               <a class="ellipsis" href="/tx/{{tx.txid}}">{{tx.txid}}</a>
+             </td>
+             <td class="text-right"><span class="ellipsis">{{tx.valueOut}} SHRM</span></td>
+           </tr>
+           </tbody>
+         </table>
  
     </div> <!-- END OF COL-8 -->
 
@@ -130,9 +150,11 @@
     </div> <!-- END OF COL-GRAY -->
 
   </div>
+  <!--
         <div class="btn-more" align="center"><br /><br /><br />
           <a href="#" onClick="document.location.reload(true)" class="btn btn-default">Refresh page</a>
         </div>
+	-->
    </div>
 </section>
 
