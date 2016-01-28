@@ -6,7 +6,7 @@
   <div class="container">
   <div class="page-header">
     <h1>
-      SHROOMS blockchain explorer.
+      SHROOMS explorer
     </h1>
   </div>
   <div id="home" class="row">
@@ -49,7 +49,7 @@
         </tbody>
       </table>
 
-      <h2>Last Block</h2>
+      <h2 style="display: inline-block">Last Block</h2> &nbsp;&nbsp;(Explorer data updates every 10 minutes)
       <table class="table" style="table-layout: fixed" data-ng-controller="StatusController" data-ng-init="getStatus('LastBlockHash')">
         <thead data-ng-include src="'/views/includes/infoStatus.html'"></thead>
         <tbody>
@@ -89,7 +89,7 @@
         <div class="btn-more">
           <a href="/blocks" class="btn btn-default">See all blocks</a>
         </div>
-  <!--		
+<!--
           <h2>Latest Transactions</h2>
  
          <table class="table table-hover table-striped" style="table-layout: fixed;">
@@ -109,11 +109,11 @@
            </tr>
            </tbody>
          </table>
- 	-->
+ -->
     </div> <!-- END OF COL-8 -->
 
     <div class="col-xs-12 col-md-4 col-gray">
-      <h2>SHROOMS node information</h2>
+      <h3>SHROOMS node information</h3>
       <table class="table" data-ng-controller="StatusController" data-ng-init="getStatus('Info')">
         <thead  data-ng-include src="'/views/includes/infoStatus.html'"></thead>
         <tbody>
