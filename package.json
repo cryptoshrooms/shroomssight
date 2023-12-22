@@ -6,7 +6,7 @@
     "name": "Larry Ren",
     "email": "ren@reddcoin.com"
   },
-  "repository": "git://github.com/cryptoshrooms/shroomssight.git",
+  "repository": "https://github.com/cryptoshrooms/shroomssight.git",
   "contributors": [
     {
       "name": "Mike Croteau",
@@ -58,10 +58,10 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/shroomssight-api"
   },
   "dependencies": {
-    "shroomssight-api": "git://github.com/cryptoshrooms/shroomssight-api.git"
+    "shroomssight-api": "https://github.com/cryptoshrooms/shroomssight-api.git"
   },
   "devDependencies": {
-    "bower": "~1.2.8",
+    "bower": "~1.8.8",
     "grunt": "~0.4.2",
     "grunt-cli": "~0.1.11",
     "grunt-contrib-jshint": "~0.8.0",
