@@ -6,7 +6,7 @@
     "name": "Larry Ren",
     "email": "ren@reddcoin.com"
   },
-  "repository": "https://github.com/cryptoshrooms/shroomssight.git",
+  "repository": "https://github.com/cryptoshrooms/shroomssight",
   "contributors": [
     {
       "name": "Mike Croteau",
@@ -58,7 +58,7 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/shroomssight-api"
   },
   "dependencies": {
-    "shroomssight-api": "https://github.com/cryptoshrooms/shroomssight-api.git"
+    "shroomssight-api": "git config --global url.https://github.com/cryptoshrooms/shroomssight-api"
   },
   "devDependencies": {
     "bower": "~1.8.8",
